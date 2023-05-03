@@ -9,12 +9,12 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.tarab</groupId>
-	<artifactId>HotelAluraProyecto</artifactId>
+	<artifactId>HotelAluraProyect</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>HotelAluraProyecto</name>
-	<description>Proyecto práctico reservación Hotel Alura</description>
+	<name>HotelAluraProyect</name>
+	<description>Hotel Alura</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>19</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
