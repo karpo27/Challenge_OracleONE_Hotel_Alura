@@ -1,0 +1,40 @@
+<nav class="navbar bg-body-tertiary bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-toggler border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <i class="bi bi-list fs-2 text-white"></i>
+    </a>
+    <a class="navbar-brand text-white fs-3" th:href="@{/index}">Alura Group</a>
+    <div class="offcanvas offcanvas-end w-25 text-center text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+        <button type="button" class="btn-close text-bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+      	<h6 class="offcanvas-title text-center mb-3" th:text="'¡Hola! Saludos ' + ${session.user.nombre} + ' '+ ${session.user.apellido} + '.'"></h6>
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-white">
+          <li class="nav-item mb-3">
+            <a class="btn w-100 p-3 btnInicio" th:href="@{/index}">Inicio</a>
+          </li>
+           <li class="nav-item mb-3">
+            <a class="btn w-100 p-3 btnReservas" th:href="@{/listaReservas}">Ver Reservas</a>
+          </li>
+          <li class="nav-item mb-3">
+            <a class="btn w-100 p-3 btnHuespedes" th:href="@{/huesped/lista}">Ver Huéspedes</a>
+          </li>
+          <li class="nav-item mb-3">
+            <form th:action="@{/logout}" method="post">
+         		<button type="submit" class="btn btnCerrarSesion w-100 p-3">Cerrar sesión</button>
+        	</form>
+          </li>
+        </ul>
+  		<h6 class="offcanvas-title text-center mb-3" th:text="'Hoy es '+ ${#dates.format(#dates.createNow(), 'dd/MM/yyyy')} + '.'"></h6>
+      </div>
+    </div>
+    <div class="ms-auto d-flex align-items-center text-white">
+      <i class="bi bi-plus-circle-fill fs-3" id="aumentar-btn"></i>
+      <i class="bi bi-dash-circle-fill fs-3 mx-3" id="reducir-btn"></i>
+      <i class="bi bi-arrow-clockwise fs-3" id="restablecer-btn"></i>
+    </div>
+  </div>
+</nav>
+<div id="texto-seleccionado" hidden=true></div>
