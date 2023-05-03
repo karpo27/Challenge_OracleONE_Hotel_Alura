@@ -1,7 +1,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/julian-giudice-940771a1/)
 
 # Challenge OracleONE: Hotel Alura
-![Badge en Desarollo](https://img.shields.io/badge/STATUS-%20FINISHED-green)
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-%20DEVELOPEMENT-green)
 
 This project is part of the training program of One Next Education Alura Latam and consists of creating two hotels apps belonging to the Alura Group.
 
