@@ -14,9 +14,16 @@ Table of Contents:
 - [Contributing](#Contributing)
 
 ## Features
-Among the project's features, reservations and guests can be created, edited, and modified. Although user authentication without implementing Spring Security was used for this project, it is recognized that this is the ideal implementation option.
+- User-friendly graphical interface
+- Reservations and guests can be created, edited, and modified
+- User authentication
+- Beautiful designs
 
 MySQL was used for database management. A stored procedure was created that automatically releases rooms when the application starts by comparing the system date with the end dates of the reservations. A trigger was also created that automatically generates the invoice at the time of inserting a reservation, calculating the costs according to the room type and the days between dates. Finally, a trigger was created that recalculates the costs when updating a reservation. A script named ScriptHotels.sql is included that contains everything necessary to create the database.
 
 ## Technologies
-Spring Boot 3 Maven Hibernate Thymeleaf CSS.
+- Spring Boot 3 
+- Maven 
+- Hibernate
+- CSS
+- MYSQL
