@@ -10,6 +10,7 @@ Table of Contents:
 - [Features](#Features)
 - [Technologies](#Technologies)
 - [Contributing](#Contributing)
+- [How to reach me](#How-to-reach-me)
 
 ## Features
 - User-friendly graphical interface
